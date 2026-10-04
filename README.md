@@ -1,2 +1,1 @@
-# UVa-Update
-actualizaciones de UltraVioletaOS
+1. cambiar licencia
