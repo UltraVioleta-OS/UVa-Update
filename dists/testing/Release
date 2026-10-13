@@ -1,27 +1,27 @@
 Origin: UVSO-UVa
 Label: UVSO UVa Testing
 Codename: testing
-Date: Tue, 13 Oct 2026 02:38:39 UTC
+Date: Tue, 13 Oct 2026 05:06:28 UTC
 Architectures: amd64
 Components: main apps
 Description: UVSO UVa - canal de pruebas
 MD5Sum:
- 2f0eec3684cd262b50498147e6ef65cd 1747 main/binary-amd64/Packages
- 8af710f099bb19171e9e0ed812b0c960 877 main/binary-amd64/Packages.gz
+ 72b17689057ec2589e2c8c86d5baa760 1761 main/binary-amd64/Packages
+ fb0c04792b2a5dc6d2fbfdff0285ddae 849 main/binary-amd64/Packages.gz
  c6dbb95bf8f1261773553192051e78de 118 main/binary-amd64/Release
  d41d8cd98f00b204e9800998ecf8427e 0 apps/binary-amd64/Packages
  7029066c27ac6f5ef18d660d5741979a 20 apps/binary-amd64/Packages.gz
  07d65ab1455d4f5e16b2662cecf7b930 118 apps/binary-amd64/Release
 SHA1:
- 03de2c751f909e2ded19cc365c5f655d70ecd219 1747 main/binary-amd64/Packages
- b8c2d7bce8c0ef5a46c8a8a01a660d491fd08232 877 main/binary-amd64/Packages.gz
+ 76338179afc14bb7e32364cd1d0c0c860cc9dffb 1761 main/binary-amd64/Packages
+ 2382070808eaeb833e0497a3d4d9ab05a9d74f28 849 main/binary-amd64/Packages.gz
  087fab17459158266149301d6d96327807724525 118 main/binary-amd64/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 apps/binary-amd64/Packages
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 apps/binary-amd64/Packages.gz
  04e05f26a5728465c91000a9ef8776d4accfccdd 118 apps/binary-amd64/Release
 SHA256:
- f19883f1910b28501c2a54960f020e01e1d5bb51c4f2714d7340208af0968163 1747 main/binary-amd64/Packages
- 511f012af8621206ffb814b719d0648691721a1f16af2d733ec68f842b8a8e77 877 main/binary-amd64/Packages.gz
+ 88907ffc0035bdb6437e8fe10b6e1b89e4797f3f72b13947e741ce4d00a8f146 1761 main/binary-amd64/Packages
+ b4b57a9e4a9056668445261e618ddd78c602d7b717bcbf242c4bddb5eaae3473 849 main/binary-amd64/Packages.gz
  9f81e3a40a43bbe53e4b0c319b16474eed214a1b7fba5feba66146cff47ef3db 118 main/binary-amd64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 apps/binary-amd64/Packages
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 apps/binary-amd64/Packages.gz

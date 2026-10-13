@@ -1,15 +1,15 @@
 Package: uvso-uva-base
-Version: 0.0.3~alpha1
+Version: 0.0.4~alpha
 Architecture: all
-Maintainer: Tu Nombre <tu@correo.com>
+Maintainer: Davinsonm <davinsonminsuaste@outlook.com>
 Depends: uvso-archive-keyring, uvso-config, uvso-uva-branding, uvso-uva-boot
 Priority: optional
 Section: metapackages
-Filename: pool/main/u/uvso-uva-base/uvso-uva-base_0.0.3~alpha1_all.deb
-Size: 604
-SHA256: 284b3c15ebba03b8df194ab54a596dad351d5d1ad26ac3bdc84a19583161835e
-SHA1: 84863c4b6a091a8554156927a9c07eed8d98acb5
-MD5sum: 860532860aa52c74f480cca3ae73133a
+Filename: pool/main/u/uvso-uva-base/uvso-uva-base_0.0.4~alpha_all.deb
+Size: 614
+SHA256: 2c64d1ada731e6d8d8ad558d6d39dd35c0a621ef5273d95553916b0df791719b
+SHA1: e12cca88d197158c7fdfb298bd383dfb2199eb9f
+MD5sum: e564ea542481c0a3ddcd92380a81f766
 Description: Metapaquete de UVSO UVa (x86_64)
  Agrega aqui en Depends los paquetes de tu package-list de live-build.
 
