@@ -1,0 +1,54 @@
+name: Publicar en testing
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'packages/**'
+      - 'apps/**'
+      - 'repo/**'
+      - 'scripts/**'
+  workflow_dispatch:
+
+concurrency: apt-repo
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GPG_KEYID: ${{ secrets.GPG_KEYID }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Instalar herramientas
+        run: sudo apt-get update && sudo apt-get install -y reprepro gnupg
+
+      - name: Importar clave de firma
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+        run: |
+          [ -n "$GPG_PRIVATE_KEY" ] || { echo "ERROR: GPG_PRIVATE_KEY llega vacio (revisa Repository access)"; exit 1; }
+          printf '%s\n' "$GPG_PRIVATE_KEY" | gpg --batch --pinentry-mode loopback --passphrase '' --import 2>&1
+          gpg --list-secret-keys --keyid-format long
+
+      - name: Construir .deb
+        run: bash scripts/build-debs.sh
+
+      - name: Descargar rama gh-pages
+        run: bash scripts/pages-fetch.sh "$RUNNER_TEMP/pages"
+
+      - name: Fijar clave de firma en la configuracion
+        run: |
+          [ -n "$GPG_KEYID" ] || { echo "ERROR: GPG_KEYID llega vacio"; exit 1; }
+          echo "Longitud de GPG_KEYID: ${#GPG_KEYID}"
+          sed -i "s/^SignWith:.*/SignWith: $GPG_KEYID/" repo/conf/distributions
+
+      - name: Publicar en testing
+        run: bash scripts/publish-testing.sh "$RUNNER_TEMP/pages"
+
+      - name: Subir a gh-pages
+        run: bash scripts/pages-push.sh "$RUNNER_TEMP/pages" "testing ${{ github.sha }}"

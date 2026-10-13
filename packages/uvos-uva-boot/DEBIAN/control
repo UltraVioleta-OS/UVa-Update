@@ -1,0 +1,10 @@
+Package: uvso-uva-boot
+Version: 0.0.4~alpha
+Section: misc
+Priority: optional
+Architecture: all
+Maintainer: Davinsonm <davinsonminsuaste@outlook.com>
+Depends: plymouth, fonts-dejavu-core
+Description: Pantalla de arranque de UVSO UVa
+ Tema Plymouth que cubre los mensajes de arranque y deja visibles
+ solo las ultimas lineas, mas parametros quiet splash para GRUB.

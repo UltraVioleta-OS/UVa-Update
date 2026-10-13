@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=UVSO
+Description=Pantalla de arranque de UVSO
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/uvso
+ScriptFile=/usr/share/plymouth/themes/uvso/uvso.script

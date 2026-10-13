@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+case "$1" in
+  remove|purge)
+    update-alternatives --remove default.plymouth /usr/share/plymouth/themes/uvso/uvso.plymouth || true
+    if command -v update-initramfs >/dev/null 2>&1; then update-initramfs -u || true; fi
+    if command -v update-grub >/dev/null 2>&1; then update-grub || true; fi
+    ;;
+esac
+exit 0

@@ -1,0 +1,11 @@
+out/
+*.deb
+*.asc
+*.key
+*.pem
+.gnupg/
+*private*
+*secret*
+.DS_Store
+*~
+*.swp

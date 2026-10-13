@@ -1,0 +1,15 @@
+Origin: UVSO-UVa
+Label: UVSO UVa
+Codename: stable
+Architectures: amd64
+Components: main apps
+Description: UVSO UVa - canal estable
+SignWith: 22798162C453FE22
+
+Origin: UVSO-UVa
+Label: UVSO UVa Testing
+Codename: testing
+Architectures: amd64
+Components: main apps
+Description: UVSO UVa - canal de pruebas
+SignWith: 22798162C453FE22

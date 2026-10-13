@@ -1,0 +1,51 @@
+# Tema UVSO: fondo + logo y las ultimas 5 lineas de mensajes abajo
+Window.SetBackgroundTopColor(0.07, 0.0, 0.14);
+Window.SetBackgroundBottomColor(0.07, 0.0, 0.14);
+
+# --- logo centrado ---
+logo.image = Image("logo.png");
+logo.sprite = Sprite(logo.image);
+logo.sprite.SetX(Window.GetX() + (Window.GetWidth() - logo.image.GetWidth()) / 2);
+logo.sprite.SetY(Window.GetY() + (Window.GetHeight() - logo.image.GetHeight()) / 2 - 40);
+
+# --- ultimas 5 lineas ---
+NLINES = 5;
+LINE_H = 20;
+for (i = 0; i < NLINES; i++) {
+  msg_text[i] = " ";
+  msg_sprite[i] = Sprite();
+}
+
+fun redraw_lines() {
+  for (k = 0; k < NLINES; k++) {
+    img = Image.Text(msg_text[k], 0.75, 0.75, 0.75);
+    msg_sprite[k].SetImage(img);
+    msg_sprite[k].SetX(Window.GetX() + 24);
+    msg_sprite[k].SetY(Window.GetY() + Window.GetHeight() - 24 - (NLINES - k) * LINE_H);
+  }
+}
+
+fun message_callback(text) {
+  for (k = 0; k < NLINES - 1; k++)
+    msg_text[k] = msg_text[k + 1];
+  if (text == "") text = " ";
+  msg_text[NLINES - 1] = text;
+  redraw_lines();
+}
+Plymouth.SetDisplayMessageFunction(message_callback);
+
+# --- contrasena de disco cifrado (si no, no se podria escribir) ---
+pw_sprite = Sprite();
+fun password_callback(prompt, bullets) {
+  stars = "";
+  for (k = 0; k < bullets; k++) stars = stars + "*";
+  img = Image.Text(prompt + " " + stars, 1, 1, 1);
+  pw_sprite.SetImage(img);
+  pw_sprite.SetX(Window.GetX() + (Window.GetWidth() - img.GetWidth()) / 2);
+  pw_sprite.SetY(Window.GetY() + Window.GetHeight() / 2 + 140);
+}
+fun normal_callback() {
+  pw_sprite.SetOpacity(0);
+}
+Plymouth.SetDisplayPasswordFunction(password_callback);
+Plymouth.SetDisplayNormalFunction(normal_callback);
