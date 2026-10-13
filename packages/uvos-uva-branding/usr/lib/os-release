@@ -1,7 +1,7 @@
-PRETTY_NAME="UVSO UVa 0.0.3 alpha"
+PRETTY_NAME="UVSO UVa 0.0.4 alpha"
 NAME="UVSO"
-VERSION_ID="0.0.3"
-VERSION="0.0.3 alpha (UVa)"
+VERSION_ID="0.0.4"
+VERSION="0.0.4 alpha (UVa)"
 VERSION_CODENAME=trixie
 ID=uvso
 ID_LIKE=debian
