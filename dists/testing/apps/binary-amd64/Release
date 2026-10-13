@@ -1,0 +1,5 @@
+Component: apps
+Origin: UVSO-UVa
+Label: UVSO UVa Testing
+Architecture: amd64
+Description: UVSO UVa - canal de pruebas

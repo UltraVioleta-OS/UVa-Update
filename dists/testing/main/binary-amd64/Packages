@@ -1,0 +1,46 @@
+Package: uvso-uva-base
+Version: 0.0.3~alpha1
+Architecture: all
+Maintainer: Tu Nombre <tu@correo.com>
+Depends: uvso-archive-keyring, uvso-config, uvso-uva-branding, uvso-uva-boot
+Priority: optional
+Section: metapackages
+Filename: pool/main/u/uvso-uva-base/uvso-uva-base_0.0.3~alpha1_all.deb
+Size: 604
+SHA256: 284b3c15ebba03b8df194ab54a596dad351d5d1ad26ac3bdc84a19583161835e
+SHA1: 84863c4b6a091a8554156927a9c07eed8d98acb5
+MD5sum: 860532860aa52c74f480cca3ae73133a
+Description: Metapaquete de UVSO UVa (x86_64)
+ Agrega aqui en Depends los paquetes de tu package-list de live-build.
+
+Package: uvso-uva-boot
+Version: 0.0.4~alpha
+Architecture: all
+Maintainer: Davinsonm <davinsonminsuaste@outlook.com>
+Depends: plymouth, fonts-dejavu-core
+Priority: optional
+Section: misc
+Filename: pool/main/u/uvso-uva-boot/uvso-uva-boot_0.0.4~alpha_all.deb
+Size: 19638
+SHA256: ecf61bd20172c5c170becf2c5b2902299105de9018a8422dd5e00a0006772751
+SHA1: 66b0f653b31b910d7e342f398494b6feb1f78a52
+MD5sum: 525e17427bf21bab8b4745ad1a30b30d
+Description: Pantalla de arranque de UVSO UVa
+ Tema Plymouth que cubre los mensajes de arranque y deja visibles
+ solo las ultimas lineas, mas parametros quiet splash para GRUB.
+
+Package: uvso-uva-branding
+Version: 0.0.4~alpha
+Architecture: all
+Maintainer: Davinsonm <davinsonminsuaste@outlook.com>
+Depends: base-files
+Priority: optional
+Section: misc
+Filename: pool/main/u/uvso-uva-branding/uvso-uva-branding_0.0.4~alpha_all.deb
+Size: 6600
+SHA256: 67dc9d430210ba124ea63c994d2c5cbc4378497cc849bb30886ef4914ba3fa67
+SHA1: a5086de2e94b19d9e1a7117e9a3cf2478555ab21
+MD5sum: 85350411489579775459cd619a474812
+Description: Identidad visual de UVSO UVa (os-release, logo, GRUB)
+ Reemplaza el logo de Debian en "Acerca de" y los nombres de sistema.
+
