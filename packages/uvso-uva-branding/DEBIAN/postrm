@@ -1,0 +1,11 @@
+#!/bin/sh
+set -e
+case "$1" in
+  remove|abort-install|abort-upgrade)
+    dpkg-divert --package uvso-uva-branding --remove --rename \
+      --divert /etc/os-release.uvso-orig /etc/os-release
+    dpkg-divert --package uvso-uva-branding --remove --rename \
+      --divert /usr/lib/os-release.uvso-orig /usr/lib/os-release
+    ;;
+esac
+exit 0

@@ -1,0 +1,13 @@
+#!/bin/sh
+set -e
+# os-release pertenece a base-files (o es un archivo suelto de la ISO):
+# se DESVIAN las dos rutas en lugar de pisarlas.
+case "$1" in
+  install|upgrade)
+    dpkg-divert --package uvso-uva-branding --add --rename \
+      --divert /usr/lib/os-release.uvso-orig /usr/lib/os-release
+    dpkg-divert --package uvso-uva-branding --add --rename \
+      --divert /etc/os-release.uvso-orig /etc/os-release
+    ;;
+esac
+exit 0

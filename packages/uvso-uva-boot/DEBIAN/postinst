@@ -1,0 +1,19 @@
+#!/bin/sh
+set -e
+THEME=/usr/share/plymouth/themes/uvso/uvso.plymouth
+case "$1" in
+  configure)
+    # --install registra el tema; --set lo FIJA aunque la alternativa
+    # estuviera en modo manual (p. ej. el tema "uva" de la ISO vieja)
+    update-alternatives --install /usr/share/plymouth/themes/default.plymouth \
+      default.plymouth "$THEME" 200
+    update-alternatives --set default.plymouth "$THEME"
+    if command -v update-initramfs >/dev/null 2>&1; then
+      update-initramfs -u -k all || true
+    fi
+    if command -v update-grub >/dev/null 2>&1; then
+      update-grub || true
+    fi
+    ;;
+esac
+exit 0

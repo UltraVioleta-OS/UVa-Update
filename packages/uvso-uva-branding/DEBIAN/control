@@ -1,0 +1,9 @@
+Package: uvso-uva-branding
+Version: 0.0.4~alpha2
+Section: misc
+Priority: optional
+Architecture: all
+Maintainer: Tu Nombre <tu@correo.com>
+Depends: base-files
+Description: Identidad visual de UVSO UVa (os-release, logo, GRUB)
+ Reemplaza el logo de Debian en "Acerca de" y los nombres de sistema.
