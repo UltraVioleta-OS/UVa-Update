@@ -14,17 +14,17 @@ Description: Metapaquete de UVSO UVa (x86_64)
  Agrega aqui en Depends los paquetes de tu package-list de live-build.
 
 Package: uvso-uva-boot
-Version: 0.0.4~alpha2
+Version: 0.0.4~alpha3
 Architecture: all
 Maintainer: Tu Nombre <tu@correo.com>
 Depends: plymouth, fonts-dejavu-core
 Priority: optional
 Section: misc
-Filename: pool/main/u/uvso-uva-boot/uvso-uva-boot_0.0.4~alpha2_all.deb
-Size: 6390
-SHA256: 8524cc8f8c8204f7b0d56f70e148113d63accefc9be41e71424477c4e46ada12
-SHA1: c28a5e68572ee0daa351f2dc61245e8d935dc8ca
-MD5sum: 198110b7190eee15715fd8a57543c3d9
+Filename: pool/main/u/uvso-uva-boot/uvso-uva-boot_0.0.4~alpha3_all.deb
+Size: 16214
+SHA256: 5765372de37afc56675749e2cf8b1bf8c4a99aca5a3a9a2f6229ed1a0b4d2ff6
+SHA1: 13102cd5012aab606734ee34c1608dfcdc092a98
+MD5sum: 259f6b9335b5df836b68f1806eecc810
 Description: Pantalla de arranque de UVSO UVa
  Tema Plymouth que cubre los mensajes de arranque y deja visibles
  solo las ultimas lineas, mas parametros quiet splash para GRUB.
