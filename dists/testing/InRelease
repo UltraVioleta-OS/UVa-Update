@@ -4,35 +4,35 @@ Hash: SHA512
 Origin: UVSO-UVa
 Label: UVSO UVa Testing
 Codename: testing
-Date: Thu, 15 Oct 2026 03:19:37 UTC
+Date: Fri, 16 Oct 2026 04:23:21 UTC
 Architectures: amd64
 Components: main apps
 Description: UVSO UVa - canal de pruebas
 MD5Sum:
- 57fde77856adfebc6c103d117165ba97 1735 main/binary-amd64/Packages
- 3de5d541cce284a8b20bd18f41d7123f 883 main/binary-amd64/Packages.gz
+ 95dda9c167546eb4b386d7655339eb23 1736 main/binary-amd64/Packages
+ 55aa0f4984f72c553f0c1aca01226e0f 867 main/binary-amd64/Packages.gz
  c6dbb95bf8f1261773553192051e78de 118 main/binary-amd64/Release
  d41d8cd98f00b204e9800998ecf8427e 0 apps/binary-amd64/Packages
  7029066c27ac6f5ef18d660d5741979a 20 apps/binary-amd64/Packages.gz
  07d65ab1455d4f5e16b2662cecf7b930 118 apps/binary-amd64/Release
 SHA1:
- 7827947da9d65822d1d52d42d31765d8032d94f3 1735 main/binary-amd64/Packages
- e23b6e72545cb0eb065073f921a1f4f9f15386a3 883 main/binary-amd64/Packages.gz
+ cc8850f6a86aaa15f885879e5b51bed8f7871540 1736 main/binary-amd64/Packages
+ 271c8cc046cbd4b94ba37de5ada9049a6f82ecbd 867 main/binary-amd64/Packages.gz
  087fab17459158266149301d6d96327807724525 118 main/binary-amd64/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 apps/binary-amd64/Packages
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 apps/binary-amd64/Packages.gz
  04e05f26a5728465c91000a9ef8776d4accfccdd 118 apps/binary-amd64/Release
 SHA256:
- d29c625b1f38423d3807271c92726be39ea3c8dc3ae455266b6711a7171c6327 1735 main/binary-amd64/Packages
- 0122087c5809335ae473d67e562d294bada544b168b699807d7a206295ca03a2 883 main/binary-amd64/Packages.gz
+ 3bb2b2eba7745ab9286e59bc55ad9531f0622faa64d496ac923ae0fdf54f786e 1736 main/binary-amd64/Packages
+ 418702d0d539d709bb45cb4bf10964564ff15a9a56a6380498ad02310321b0e5 867 main/binary-amd64/Packages.gz
  9f81e3a40a43bbe53e4b0c319b16474eed214a1b7fba5feba66146cff47ef3db 118 main/binary-amd64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 apps/binary-amd64/Packages
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 apps/binary-amd64/Packages.gz
  e5a166931e2d25b15f136477b459e1b8ea5d6f492e3d0714f18b72a348446cd1 118 apps/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQTi0kbmsCoYL6+im+3onoae6YXahgUCatBGSQAKCRDonoae6YXa
-hhdqAP9UD56X/jQNAg481yFixztiwpAoWFuvHUil3g5WrUTfvgEA/UPXsF20sShm
-VtSlxi2TE7qmJGMidDV30gxcyYrrnwY=
-=hDk/
+iHUEARYKAB0WIQTi0kbmsCoYL6+im+3onoae6YXahgUCatGmuQAKCRDonoae6YXa
+hqaJAQCWoso6J+tvKLgYks4ellD00CFBElujK53Abo6FPH057AD9FP78w59eVCRG
+khFi9cK6jyE8QdZ2peDJNXQs9dKQNwk=
+=Gzsb
 -----END PGP SIGNATURE-----
