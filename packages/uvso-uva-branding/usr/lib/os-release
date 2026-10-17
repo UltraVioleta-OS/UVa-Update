@@ -1,7 +1,7 @@
-PRETTY_NAME="UltraVioleta OS UVa 0.0.5 alpha2"
+PRETTY_NAME="UltraVioleta OS UVa 0.0.6 alpha"
 NAME="UltraVioleta OS"
-VERSION_ID="0.0.5"
-VERSION="0.0.5 alpha2 (UVa)"
+VERSION_ID="0.0.6"
+VERSION="0.0.6 alpha (UVa)"
 VERSION_CODENAME=trixie
 ID=uva
 ID_LIKE=debian

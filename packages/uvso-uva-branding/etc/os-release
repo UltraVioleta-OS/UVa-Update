@@ -1,11 +1,1 @@
-PRETTY_NAME="UltraVioleta OS UVa 0.0.4 alpha"
-NAME="UltraVioleta OS"
-VERSION_ID="0.0.4"
-VERSION="0.0.4 alpha (UVa)"
-VERSION_CODENAME=trixie
-ID=uva
-ID_LIKE=debian
-HOME_URL="https://github.com/UltraVioleta-OS"
-SUPPORT_URL="https://github.com/UltraVioleta-OS"
-BUG_REPORT_URL="https://github.com/UltraVioleta-OS"
-LOGO=uvso-logo
+../usr/lib/os-release
