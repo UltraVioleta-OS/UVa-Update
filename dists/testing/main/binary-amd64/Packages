@@ -1,46 +1,46 @@
 Package: uvso-uva-base
-Version: 0.0.5~alpha2
+Version: 0.0.6~alpha1
 Architecture: all
 Maintainer: Davinsonm <davinsonminsuaste@outlook.com>
 Depends: uvso-archive-keyring, uvso-config, uvso-uva-branding, uvso-uva-boot
 Priority: optional
 Section: metapackages
-Filename: pool/main/u/uvso-uva-base/uvso-uva-base_0.0.5~alpha2_all.deb
+Filename: pool/main/u/uvso-uva-base/uvso-uva-base_0.0.6~alpha1_all.deb
 Size: 614
-SHA256: beaa05d5db5fbd84251a7b9a30ce4acea533fdc8132cc68742e0be049c292884
-SHA1: 64683ec9f90704b036d755f1364c713da9bf6ac1
-MD5sum: 71eae6994555acb409f77e5a3ad193e5
+SHA256: 8271ad8c96924a5f0e6d9f9b34762bdea05940333f52cd2ed8a137d4ddb2906a
+SHA1: e2223b200b3bbe3e5eee34b6614f2969038f2275
+MD5sum: c3748fea6806d5145580d347fbd75a88
 Description: Metapaquete de UVSO UVa (x86_64)
  Agrega aqui en Depends los paquetes de tu package-list de live-build.
 
 Package: uvso-uva-boot
-Version: 0.0.5~alpha2
+Version: 0.0.6~alpha1
 Architecture: all
 Maintainer: Tu Nombre <tu@correo.com>
 Depends: plymouth, fonts-dejavu-core
 Priority: optional
 Section: misc
-Filename: pool/main/u/uvso-uva-boot/uvso-uva-boot_0.0.5~alpha2_all.deb
+Filename: pool/main/u/uvso-uva-boot/uvso-uva-boot_0.0.6~alpha1_all.deb
 Size: 16212
-SHA256: d7a5a35124067ff91a3f1e91ed2d8263041b230a09f4e88b38dfacfe4709a0d3
-SHA1: 9ab12ac346c52a0003e826a88272262cb434722a
-MD5sum: d06a600f9b33fd70716175357304871a
+SHA256: 036beccb2684a73d8ee8c9586f4606790dd21811e3e70fb12fee2ae006bbeeaa
+SHA1: ac9c58701f57a07578b59ba549e04e4275318bfc
+MD5sum: 7a3fbc0112e0ea8961a9a34ede8ec61b
 Description: Pantalla de arranque de UVSO UVa
  Tema Plymouth que cubre los mensajes de arranque y deja visibles
  solo las ultimas lineas, mas parametros quiet splash para GRUB.
 
 Package: uvso-uva-branding
-Version: 0.0.5~alpha2
+Version: 0.0.6~alpha1
 Architecture: all
 Maintainer: Tu Nombre <tu@correo.com>
 Depends: base-files
 Priority: optional
 Section: misc
-Filename: pool/main/u/uvso-uva-branding/uvso-uva-branding_0.0.5~alpha2_all.deb
-Size: 19104
-SHA256: 90616589ad926da363d3cf3abddddfce1e850e498a3a991cf35927d0c0bcc3a9
-SHA1: e49c9c795084bb3d5128ec113bbddcd3b92fcd46
-MD5sum: 1f918751f1c48890373f509404c3c3a0
+Filename: pool/main/u/uvso-uva-branding/uvso-uva-branding_0.0.6~alpha1_all.deb
+Size: 19098
+SHA256: 86cfab4289b20d5cf992e1d49b9dc74dbd8cc291b6873f5bb6e3007699e7d85f
+SHA1: cebcea45ddef4e4d7ca40aaba33b2a21bdb01b9f
+MD5sum: bda781813807b1852b2d0a0bb63e7222
 Description: Identidad visual de UVSO UVa (os-release, logo, GRUB)
  Reemplaza el logo de Debian en "Acerca de" y los nombres de sistema.
 
